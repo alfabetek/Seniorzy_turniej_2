@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="15; url=projector0.html">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        tr { page-break-inside: avoid; }
+
+        body {
+            font-size: 1.2em;
+            font-family: Arial, Verdana, sans-serif;
+            text-align: center;
+            margin: 0 20px;
+            padding: 0;
+        }
+
+        .left { text-align: left; }
+        .center { text-align: center; }
+
+        .layout-table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        .layout-cell {
+            vertical-align: top;
+            padding-right: 20px;
+        }
+
+        .results-table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            white-space: nowrap;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+
+        .small {
+            font-size: 70%;
+        }
+
+        .might-be-long-cell {
+            max-width: 330px;
+            width: 330px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .table-striped > tbody > tr:nth-of-type(odd) {
+            background-color: #f0f0f0;
+        }
+
+        /* Top block (the "top participants on each page") gets a thick rectangle */
+        .top-block > tr:first-child td {
+            border-top-width: 3px;
+        }
+
+        .top-block > tr:last-child td {
+            border-bottom-width: 3px;
+        }
+
+        .top-block td:first-child {
+            border-left-width: 3px;
+        }
+
+        .top-block td:last-child {
+            border-right-width: 3px;
+        }
+
+        .group-row td {
+            font-weight: bold;
+        }
+
+        .result-cell {
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <canvas id="canvas" style="position: fixed; z-index: -1000;"></canvas>
+    <h2 align="center"></h2>
+    <table class="layout-table" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td class="layout-cell">
+        <table cellpadding="4" class="results-table table-striped">
+            <thead>
+        <tr class="border">
+            <th class="border">M-ce</th>
+            <th class="border"></th>
+            
+            <th class="border">Wynik</th>
+            
+            <th class="border">#</th>
+        </tr>
+      </thead>
+            <tbody><tr class="border">
+        <td class="border">1</td>
+        <td class="border left might-be-long-cell">Tadeusz Dyduch - Joanna Ochocka<font style="margin-left: 3px;  font-size: 0.6em;">(3)</font></td>
+        
+        <td class="border result-cell">34.00</td>
+        
+        <td class="border small">6</td>
+      </tr><tr class="border">
+        <td class="border">2</td>
+        <td class="border left might-be-long-cell">Kazimierz Bartodziej - Ludmiła Olbrych<font style="margin-left: 3px;  font-size: 0.6em;">(1)</font></td>
+        
+        <td class="border result-cell">-2.00</td>
+        
+        <td class="border small">6</td>
+      </tr><tr class="border">
+        <td class="border">3</td>
+        <td class="border left might-be-long-cell">Wiesława Bartodziej - Andrzej Wojtynek<font style="margin-left: 3px;  font-size: 0.6em;">(4)</font></td>
+        
+        <td class="border result-cell">-10.00</td>
+        
+        <td class="border small">6</td>
+      </tr><tr class="border">
+        <td class="border">4</td>
+        <td class="border left might-be-long-cell">Teresa Gwiazdowska - Lech Gwiazdowski<font style="margin-left: 3px;  font-size: 0.6em;">(2)</font></td>
+        
+        <td class="border result-cell">-22.00</td>
+        
+        <td class="border small">6</td>
+      </tr></tbody>
+        </table>
+      </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

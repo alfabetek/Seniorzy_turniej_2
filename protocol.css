@@ -1,0 +1,46 @@
+th, td, table, tr {
+	white-space: nowrap;
+}
+
+.table-img {
+	vertical-align: baseline;
+}
+
+.bImage {
+	max-width: 6em;
+}
+
+table tr td, table tr th, table .clickable, #pairH, footer, .boardInfo {
+	color: #000000 !important;
+}
+
+.tooltip-inner {
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 1px solid #212529;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #212529;
+}
+
+.clickable, a.clickable {
+	font-weight: 500 !important;
+	text-decoration: none;
+}	
+
+#myBody {
+	min-width: auto !important;
+}
+
+.boardInfo .row {
+    display: flex !important;
+}
+
+.scoresTable {
+	display: block !important;
+}
+
+@page {
+    size: auto;
+}
